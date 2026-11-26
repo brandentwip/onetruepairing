@@ -144,6 +144,31 @@
         "dot_active_color": "#881983"
       }
     },
+    "new_arrival_ye9BeX": {
+      "type": "NewArrival",
+      "disabled": true,
+      "name": "New Arrivals Grid",
+      "settings": {
+        "heading": "Shop New Arrivals",
+        "heading_align": "left",
+        "collection": "",
+        "products_to_show": 6,
+        "show_price": true,
+        "hover_image": false,
+        "show_view_all": false,
+        "view_all_label": "View all",
+        "columns_desktop": 3,
+        "columns_tablet": 2,
+        "columns_mobile": 2,
+        "image_ratio": "5 / 9",
+        "image_fit": "cover",
+        "card_bg": "#f7f3ea",
+        "border_color": "#e5e5e5",
+        "side_padding": 25,
+        "padding_top": 0,
+        "padding_bottom": 40
+      }
+    },
     "multiple_banner_JPpQnT": {
       "type": "multiple-banner",
       "blocks": {
@@ -292,7 +317,8 @@
         "section_title": "SHOP NEW ARRIVALS",
         "section_sub_title": "",
         "heading_style_handle": "style_two",
-        "heading_left_position": true
+        "heading_left_position": true,
+        "product_card_layout": false
       }
     },
     "featured_collection_fBcwVj": {
@@ -535,7 +561,8 @@
         "section_title": "SHOP NEW ARRIVALS",
         "section_sub_title": "",
         "heading_style_handle": "style_one",
-        "heading_left_position": true
+        "heading_left_position": true,
+        "product_card_layout": false
       }
     },
     "multiple_banner_PhDqVJ": {
@@ -602,7 +629,8 @@
         "section_title": "FOLLOW US",
         "section_sub_title": "",
         "heading_style_handle": "style_one",
-        "heading_left_position": true
+        "heading_left_position": true,
+        "product_card_layout": false
       }
     },
     "service_4_jeTJbX": {
@@ -862,6 +890,7 @@
   },
   "order": [
     "b6c7552a-b361-4821-b329-92ec3340e6ad",
+    "new_arrival_ye9BeX",
     "multiple_banner_JPpQnT",
     "featured_collection_fBcwVj",
     "category_list_2_yQX3Vz",
