@@ -134,17 +134,21 @@
           {%- assign product = collection.products[idx] -%}
         {%- endif -%}
         {%- if product == blank -%}{%- continue -%}{%- endif -%}
+        {%- assign main_image = product.featured_image -%}
+        {%- if use_blocks and section.blocks[idx].settings.custom_image != blank -%}
+          {%- assign main_image = section.blocks[idx].settings.custom_image -%}
+        {%- endif -%}
         <a href="{{ product.url }}" class="na__card" {% if use_blocks %}{{ section.blocks[idx].shopify_attributes }}{% endif %}>
           <span class="na__media">
-            {%- if product.featured_image -%}
+            {%- if main_image -%}
               {{
-                product.featured_image
+                main_image
                 | image_url: width: 900
                 | image_tag:
                   loading: 'lazy',
                   widths: '300, 450, 600, 900',
                   sizes: '(min-width: 992px) calc(100vw / var(--na-cols)), (min-width: 576px) 50vw, 100vw',
-                  alt: product.featured_image.alt
+                  alt: main_image.alt | default: product.title
               }}
             {%- else -%}
               {{ 'product-1' | placeholder_svg_tag }}
@@ -252,7 +256,13 @@
       "type": "product",
       "name": "Product",
       "settings": [
-        { "type": "product", "id": "product", "label": "Product" }
+        { "type": "product", "id": "product", "label": "Product" },
+        {
+          "type": "image_picker",
+          "id": "custom_image",
+          "label": "Custom image",
+          "info": "Optional. Upload a separate image; if empty, the product's main image is used."
+        }
       ]
     }
   ],
