@@ -202,6 +202,7 @@
       "settings": {
         "heading": "Shop New Arrivals",
         "heading_align": "left",
+        "heading_size": 50,
         "collection": "",
         "products_to_show": 6,
         "show_price": true,
@@ -212,7 +213,7 @@
         "columns_tablet": 2,
         "columns_mobile": 3,
         "image_ratio": "5 / 9",
-        "image_fit": "cover",
+        "image_fit": "contain",
         "card_bg": "#f7f3ea",
         "border_color": "#e5e5e5",
         "side_padding": 25,
