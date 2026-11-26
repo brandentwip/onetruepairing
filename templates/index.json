@@ -1,1 +1,875 @@
-{"sections":{"b6c7552a-b361-4821-b329-92ec3340e6ad":{"type":"slideshow-2","blocks":{"slide_pyYhLY":{"type":"slide","settings":{"animated_circle_enable":false,"slide_bg_image":"shopify:\/\/shop_images\/2_f0491724-b0eb-4dba-8be8-e5ae04574a1c.jpg","mobile_image":"shopify:\/\/shop_images\/PHONE_VERSION_WEBSITE_1.jpg","slide_image_enable":false,"content_position_right":false,"slide_sub_title":"","slide_title":"","slide_content":"","slide_button_1":"Shop Women","slide_button_1_url":"shopify:\/\/collections\/women","slide_button_2":"","slide_button_2_url":"","large_padding_mobile":true,"block_color_enable":false,"overlay_color":"#071c1f","overlay_color_opatity":0.8,"circle_color":"#e53e29","sub_title_color":"#e53e29","title_color":"#ffffff","content_color":"#ffffff","content_border_color":"#576466","button_text_color":"#ffffff","button_bg_color":"#e53e29","button_text_hover_color":"#071c1f","button_bg_hover_color":"#071c1f","button_bg_hover_active_color":"#ffffff","button_2_text_color":"#ffffff","button_2_bg_color":"","button_2_border_color":"#dddddd","button_2_text_hover_color":"#071c1f","button_2_bg_hover_color":"#ffffff","button_2_bg_hover_active_color":"#ffffff"}},"slide_6g4AAL":{"type":"slide","settings":{"animated_circle_enable":false,"slide_bg_image":"shopify:\/\/shop_images\/1_2_9b7a02f8-3caa-4bde-863c-2191942ac0f1.jpg","mobile_image":"shopify:\/\/shop_images\/1_ee55a789-33bf-4041-982b-5e4a195c518d.png","slide_image_enable":false,"content_position_right":false,"slide_sub_title":"","slide_title":"","slide_content":"","slide_button_1":"Shop Men","slide_button_1_url":"shopify:\/\/collections\/menswear-1","slide_button_2":"","slide_button_2_url":"","large_padding_mobile":true,"block_color_enable":false,"overlay_color":"#071c1f","overlay_color_opatity":0.8,"circle_color":"#e53e29","sub_title_color":"#e53e29","title_color":"#ffffff","content_color":"#ffffff","content_border_color":"#576466","button_text_color":"#ffffff","button_bg_color":"#e53e29","button_text_hover_color":"#071c1f","button_bg_hover_color":"#071c1f","button_bg_hover_active_color":"#ffffff","button_2_text_color":"#ffffff","button_2_bg_color":"","button_2_border_color":"#dddddd","button_2_text_hover_color":"#071c1f","button_2_bg_hover_color":"#ffffff","button_2_bg_hover_active_color":"#ffffff"}}},"block_order":["slide_pyYhLY","slide_6g4AAL"],"custom_css":[".btn-effect-1:after {width: 0%; height: 100%; top: 0; left: 0; color: #fff; background: #f9f9f9;}"],"settings":{"autoplay_true":true,"autoplay_speed":4000,"section_color_enable":false,"arrow_color":"#ffffff","arrow_border_color":"#576466","arrow_hover_bg_color":"#881983","arrow_hover_color":"#ffffff","dot_color":"#c0c0c0","dot_active_color":"#881983"}},"multiple_banner_r83MFi":{"type":"multiple-banner","blocks":{"banner_gBfcJL":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/grid_photo_2_08a83138-de59-40d9-b0df-af8eefa350ce.jpg","banner_sub_title":"CHECKERED TEE","banner_title":"₹ 4,000","banner_url":"shopify:\/\/products\/blue-check-lycra-t-shirt","banner_button_1":"","text_right_enable":false,"button_enable":false,"banner_column":4,"banner_column_md":6,"banner_column_sm":4,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_XqyTxK":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/IMG_2055.jpg","banner_sub_title":"YUZU TOP","banner_title":"₹ 7,500","banner_url":"shopify:\/\/products\/yuzu-tie-up-top","banner_button_1":"Button Title 1","text_right_enable":false,"button_enable":false,"banner_column":4,"banner_column_md":6,"banner_column_sm":4,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_y8FUnF":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/grid_photo_2_2.jpg","banner_sub_title":"HOODIE TEE BLACK","banner_title":"₹ 5,500","banner_url":"shopify:\/\/products\/hoodie-tee","banner_button_1":"Button Title 1","text_right_enable":false,"button_enable":false,"banner_column":4,"banner_column_md":6,"banner_column_sm":4,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_yh7Cfe":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/IMG_2053.jpg","banner_sub_title":"MUDHAZE DRESS","banner_title":"₹9,500","banner_url":"shopify:\/\/products\/mudhaze-panel-dress","banner_button_1":"Button Title 1","text_right_enable":false,"button_enable":false,"banner_column":4,"banner_column_md":6,"banner_column_sm":4,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_fwPEeq":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/grid_photo_2_39bf9ac6-e596-4560-b6da-1af750caa4b9.jpg","banner_sub_title":"STRIPED SHIRT","banner_title":"₹ 4,500","banner_url":"shopify:\/\/products\/zinnia-dress","banner_button_1":"","text_right_enable":false,"button_enable":false,"banner_column":4,"banner_column_md":6,"banner_column_sm":4,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_4UxFVy":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/IMG_2058.jpg","banner_sub_title":"IRIS DRESS","banner_title":"₹ 12,000","banner_url":"shopify:\/\/products\/iris-dress","banner_button_1":"Button Title 1","text_right_enable":false,"button_enable":false,"banner_column":4,"banner_column_md":6,"banner_column_sm":4,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"section_padding_MDpC6X":{"type":"section_padding","settings":{"section_padding_top":50,"section_padding_bottom":50,"section_padding_top_md":30,"section_padding_bottom_md":30,"section_padding_top_xs":30,"section_padding_bottom_xs":30}}},"block_order":["banner_gBfcJL","banner_XqyTxK","banner_y8FUnF","banner_yh7Cfe","banner_fwPEeq","banner_4UxFVy","section_padding_MDpC6X"],"settings":{"section_title":"SHOP NEW ARRIVALS","section_sub_title":"","heading_style_handle":"style_two","heading_left_position":true}},"featured_collection_fBcwVj":{"type":"featured-collection","blocks":{"section_padding_9MFLUN":{"type":"section_padding","settings":{"section_padding_top":0,"section_padding_bottom":0,"section_padding_top_md":0,"section_padding_bottom_md":0,"section_padding_top_xs":0,"section_padding_bottom_xs":0}}},"block_order":["section_padding_9MFLUN"],"disabled":true,"settings":{"large_width_enable":true,"section_title":"Shop Best Sellers","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":true,"featured_product_handle":"women","view_all_button_enable":false,"view_all_button_title":"View All","featured_product_limit_handle":10,"product_row":1,"product_column":4,"product_column_md":3,"product_column_sm":3,"autoplay_true":false,"autoplay_speed":7000}},"category_list_2_yQX3Vz":{"type":"category-list-2","blocks":{"category_38UBq3":{"type":"category","settings":{"category_handle":"outerwear","section_sub_title":""}},"category_QUUc8d":{"type":"category","settings":{"category_handle":"dresses","section_sub_title":""}},"category_TibXwm":{"type":"category","settings":{"category_handle":"tops","section_sub_title":""}},"category_Unif7n":{"type":"category","settings":{"category_handle":"bottoms","section_sub_title":""}},"category_kDGJbE":{"type":"category","disabled":true,"settings":{"category_handle":"bottoms","section_sub_title":""}},"section_padding_BiMAWx":{"type":"section_padding","settings":{"section_padding_top":0,"section_padding_bottom":0,"section_padding_top_md":0,"section_padding_bottom_md":0,"section_padding_top_xs":0,"section_padding_bottom_xs":0}}},"block_order":["category_38UBq3","category_QUUc8d","category_TibXwm","category_Unif7n","category_kDGJbE","section_padding_BiMAWx"],"settings":{"section_title":"","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":false,"product_column":2,"product_column_md":2,"product_column_sm":2,"autoplay_true":false,"autoplay_speed":7000,"section_color_enable":false,"border_color":"#d1dae0","background_color":"#ffffff"}},"multiple_banner_gqLPUP":{"type":"multiple-banner","blocks":{"banner_zdT3pK":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/Untitled_Artwork_11.png","banner_sub_title":"","banner_title":"","banner_url":"shopify:\/\/collections\/women","banner_button_1":"Shop Now","text_right_enable":true,"button_enable":true,"banner_column":12,"banner_column_md":12,"banner_column_sm":12,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_4h6dFQ":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/Untitled_Artwork_12_9c1e3711-733a-4ad9-bdb2-aa6bcf86505e.jpg","banner_sub_title":"","banner_title":"","banner_url":"","banner_button_1":"","text_right_enable":false,"button_enable":false,"banner_column":6,"banner_column_md":6,"banner_column_sm":6,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_KARCK7":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/IMG_0853_50538316-612b-4d81-8858-906bb59df391.jpg","banner_sub_title":"","banner_title":"","banner_url":"","banner_button_1":"","text_right_enable":false,"button_enable":false,"banner_column":6,"banner_column_md":6,"banner_column_sm":6,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_M8kaz9":{"type":"banner","disabled":true,"settings":{"banner_image":"shopify:\/\/shop_images\/IMG_0521.jpg","banner_sub_title":"","banner_title":"","banner_url":"","banner_button_1":"","text_right_enable":false,"button_enable":false,"banner_column":12,"banner_column_md":12,"banner_column_sm":12,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_ptNdyY":{"type":"banner","disabled":true,"settings":{"banner_image":"shopify:\/\/shop_images\/IMG_0533.jpg","banner_sub_title":"","banner_title":"","banner_url":"","banner_button_1":"","text_right_enable":false,"button_enable":false,"banner_column":12,"banner_column_md":12,"banner_column_sm":12,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"section_padding_wqjqg8":{"type":"section_padding","settings":{"section_padding_top":30,"section_padding_bottom":0,"section_padding_top_md":30,"section_padding_bottom_md":0,"section_padding_top_xs":30,"section_padding_bottom_xs":0}}},"block_order":["banner_zdT3pK","banner_4h6dFQ","banner_KARCK7","banner_M8kaz9","banner_ptNdyY","section_padding_wqjqg8"],"settings":{"section_title":"SHOP NEW ARRIVALS","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":true}},"multiple_banner_PhDqVJ":{"type":"multiple-banner","blocks":{"banner_NUhq3X":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/page0.jpg","banner_sub_title":"","banner_title":"","banner_url":"https:\/\/www.instagram.com\/onetruepairing.in\/?igsh=ZmpnaDRrbmNsb2J1","banner_button_1":"Button Title 1","text_right_enable":false,"button_enable":false,"banner_column":12,"banner_column_md":12,"banner_column_sm":12,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"banner_VwpkN8":{"type":"banner","settings":{"banner_image":"shopify:\/\/shop_images\/IMG_0533.jpg","banner_sub_title":"","banner_title":"","banner_url":"","banner_button_1":"Button Title 1","text_right_enable":false,"button_enable":false,"banner_column":12,"banner_column_md":12,"banner_column_sm":12,"block_color_enable":false,"sub_title_color":"#e53e29","title_color":"#ffffff","button_color":"#8cb2b2","button_hover_color":"#ffffff"}},"section_padding_FUz88d":{"type":"section_padding","settings":{"section_padding_top":30,"section_padding_bottom":0,"section_padding_top_md":30,"section_padding_bottom_md":0,"section_padding_top_xs":30,"section_padding_bottom_xs":0}}},"block_order":["banner_NUhq3X","banner_VwpkN8","section_padding_FUz88d"],"settings":{"section_title":"FOLLOW US","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":true}},"service_4_jeTJbX":{"type":"service-4","blocks":{"service_keq3TP":{"type":"service","settings":{"icon_image_enable":true,"service_icon":"shopify:\/\/shop_images\/free-shipping_499775b0-a54b-41f7-9147-806d88456052.png","service_icon_enable":true,"service_icon_select":"parts","service_title":"Free Shipping","service_content":"<p>Free shipping on all prepaid orders. Free returns and exchanges.<\/p>","service_button_title":"","service_url":"","service_column":4,"service_column_md":6,"service_column_sm":12,"block_color_enable":false,"title_color":"#071c1f","title_hover_color":"#e53e29","content_color":"#071c1f","button_color":"#8cb2b2","button_hover_color":"#e53e29"}},"service_dFPkcP":{"type":"service","settings":{"icon_image_enable":true,"service_icon":"shopify:\/\/shop_images\/online-shopping.png","service_icon_enable":true,"service_icon_select":"parts","service_title":"Secure     payment","service_content":"<p>Your payment information is processed securely.<\/p>","service_button_title":"","service_url":"","service_column":4,"service_column_md":6,"service_column_sm":12,"block_color_enable":false,"title_color":"#071c1f","title_hover_color":"#e53e29","content_color":"#071c1f","button_color":"#8cb2b2","button_hover_color":"#e53e29"}},"service_VCxfz9":{"type":"service","settings":{"icon_image_enable":true,"service_icon":"shopify:\/\/shop_images\/call.png","service_icon_enable":true,"service_icon_select":"parts","service_title":"Customer Support","service_content":"<p>Need to contact us ? Just send us an e-mail at onetruepairing.com<\/p>","service_button_title":"","service_url":"","service_column":4,"service_column_md":6,"service_column_sm":12,"block_color_enable":false,"title_color":"#071c1f","title_hover_color":"#e53e29","content_color":"#071c1f","button_color":"#8cb2b2","button_hover_color":"#e53e29"}},"service_aAAwkB":{"type":"service","disabled":true,"settings":{"icon_image_enable":true,"service_icon":"shopify:\/\/shop_images\/support.png","service_icon_enable":true,"service_icon_select":"parts","service_title":"Customer service","service_content":"<p>We are available from monday to saturday to answer your questions.<\/p>","service_button_title":"","service_url":"","service_column":3,"service_column_md":6,"service_column_sm":12,"block_color_enable":false,"title_color":"#071c1f","title_hover_color":"#e53e29","content_color":"#071c1f","button_color":"#8cb2b2","button_hover_color":"#e53e29"}},"section_padding_XwJALh":{"type":"section_padding","settings":{"section_padding_top":10,"section_padding_bottom":10,"section_padding_top_md":10,"section_padding_bottom_md":10,"section_padding_top_xs":10,"section_padding_bottom_xs":10}},"section_background_BcPBan":{"type":"section_background","settings":{"section_bg_color":"#000000"}}},"block_order":["service_keq3TP","service_dFPkcP","service_VCxfz9","service_aAAwkB","section_padding_XwJALh","section_background_BcPBan"],"settings":{"section_title":"","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":false}},"custom_liquid_N9CcLB":{"type":"custom-liquid","blocks":{"section_padding_Fph8JN":{"type":"section_padding","settings":{"section_padding_top":0,"section_padding_bottom":100,"section_padding_top_md":0,"section_padding_bottom_md":80,"section_padding_top_xs":0,"section_padding_bottom_xs":60}}},"block_order":["section_padding_Fph8JN"],"disabled":true,"settings":{"section_title":"","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":false,"custom_liquid":"<style>\nvideo {\nwidth: 100%;\nheight: auto;\ndisplay: block;\nmargin: 0 auto;\n}\n<\/style>\n<video muted autoplay playsinline loop>\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/229e5710a6a34c3f8b931b9a65b7c372.mp4\"\n                  type=\"video\/mp4\">\n    <source src=\"\/media\/cc0-videos\/flower.mp4\"\n                  type=\"video\/mp4\">\n<\/video>\n<a class=\"video-btn\" href=\"#\">Shop Now<\/a>"}},"custom_liquid_cECXzf":{"type":"custom-liquid","blocks":{"section_padding_GBQe9w":{"type":"section_padding","settings":{"section_padding_top":0,"section_padding_bottom":0,"section_padding_top_md":0,"section_padding_bottom_md":0,"section_padding_top_xs":0,"section_padding_bottom_xs":0}}},"block_order":["section_padding_GBQe9w"],"disabled":true,"settings":{"section_title":"","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":false,"custom_liquid":"<style>\nvideo {\nwidth: 100%;\nheight: auto;\ndisplay: block;\nmargin: 0 auto;\n}\n<\/style>\n<video muted autoplay playsinline loop>\n    <source src=\"https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/2c20ae5d153848d6b83370f482541789.mp4\"\n                  type=\"video\/mp4\">\n    <source src=\"\/media\/cc0-videos\/flower.mp4\"\n                  type=\"video\/mp4\">\n<\/video>\n\n<a class=\"video-btn\" href=\"#\">Shop Now<\/a>"}},"about_with_image_old_iKyUgW":{"type":"about-with-image-old","blocks":{"section_padding_UQKqLB":{"type":"section_padding","settings":{"section_padding_top":0,"section_padding_bottom":95,"section_padding_top_md":0,"section_padding_bottom_md":70,"section_padding_top_xs":0,"section_padding_bottom_xs":50}}},"block_order":["section_padding_UQKqLB"],"disabled":true,"settings":{"row_reverse":false,"about_image":"shopify:\/\/shop_images\/T_repair.webp","sub_title":"","title":"Come over and get ready for the best Product experience of your life.","main_content":"<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.<\/p>","show_button":true,"button_title":"View Full Story","button_url":"#","section_color_enable":false,"button_text_color":"#ffffff","button_bg_color":"#e53e29","button_text_hover_color":"#071c1f","button_bg_hover_color":"#071c1f"}},"latest_blog_QBttB3":{"type":"latest-blog","blocks":{"section_padding_RDBnjt":{"type":"section_padding","settings":{"section_padding_top":50,"section_padding_bottom":50,"section_padding_top_md":50,"section_padding_bottom_md":50,"section_padding_top_xs":50,"section_padding_bottom_xs":50}}},"block_order":["section_padding_RDBnjt"],"disabled":true,"settings":{"section_title":"Latest News & Blog","section_sub_title":"","heading_style_handle":"style_one","heading_left_position":false,"blog_handle":"news","blog_limit_handle":4,"blog_style":"style_2","author_name_enable":false,"comment_enable":true,"blog_description_enable":true,"blog_date_enable":true,"read_more_title":"Read More","blog_column":3,"blog_column_md":2,"blog_column_sm":1,"autoplay_true":false,"autoplay_speed":7000}}},"order":["b6c7552a-b361-4821-b329-92ec3340e6ad","multiple_banner_r83MFi","featured_collection_fBcwVj","category_list_2_yQX3Vz","multiple_banner_gqLPUP","multiple_banner_PhDqVJ","service_4_jeTJbX","custom_liquid_N9CcLB","custom_liquid_cECXzf","about_with_image_old_iKyUgW","latest_blog_QBttB3"]}
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "b6c7552a-b361-4821-b329-92ec3340e6ad": {
+      "type": "slideshow-2",
+      "blocks": {
+        "slide_pyYhLY": {
+          "type": "slide",
+          "settings": {
+            "animated_circle_enable": false,
+            "slide_bg_image": "shopify://shop_images/Copy_of_MENSWEAR_LOOKBOOK_NEW_Website.png",
+            "mobile_image": "shopify://shop_images/ConvertOut-Resized-PHONE_VERSION_WEBSITE.jpg",
+            "slide_image_enable": false,
+            "content_position_right": false,
+            "slide_sub_title": "",
+            "slide_title": "",
+            "slide_content": "",
+            "slide_button_1": "SHOP SALE",
+            "slide_button_1_url": "shopify://collections/clearance-sale",
+            "slide_button_2": "",
+            "slide_button_2_url": "",
+            "large_padding_mobile": true,
+            "block_color_enable": false,
+            "overlay_color": "#071c1f",
+            "overlay_color_opatity": 0.8,
+            "circle_color": "#e53e29",
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "content_color": "#ffffff",
+            "content_border_color": "#576466",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#e53e29",
+            "button_text_hover_color": "#071c1f",
+            "button_bg_hover_color": "#071c1f",
+            "button_bg_hover_active_color": "#ffffff",
+            "button_2_text_color": "#ffffff",
+            "button_2_bg_color": "",
+            "button_2_border_color": "#dddddd",
+            "button_2_text_hover_color": "#071c1f",
+            "button_2_bg_hover_color": "#ffffff",
+            "button_2_bg_hover_active_color": "#ffffff"
+          }
+        },
+        "slide_fEFqL9": {
+          "type": "slide",
+          "settings": {
+            "animated_circle_enable": false,
+            "slide_bg_image": "shopify://shop_images/2_f0491724-b0eb-4dba-8be8-e5ae04574a1c.jpg",
+            "mobile_image": "shopify://shop_images/PHONE_VERSION_WEBSITE_1.jpg",
+            "slide_image_enable": false,
+            "content_position_right": false,
+            "slide_sub_title": "",
+            "slide_title": "",
+            "slide_content": "",
+            "slide_button_1": "Shop Women",
+            "slide_button_1_url": "shopify://collections/women",
+            "slide_button_2": "",
+            "slide_button_2_url": "",
+            "large_padding_mobile": true,
+            "block_color_enable": false,
+            "overlay_color": "#071c1f",
+            "overlay_color_opatity": 0.8,
+            "circle_color": "#e53e29",
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "content_color": "#ffffff",
+            "content_border_color": "#576466",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#e53e29",
+            "button_text_hover_color": "#071c1f",
+            "button_bg_hover_color": "#071c1f",
+            "button_bg_hover_active_color": "#ffffff",
+            "button_2_text_color": "#ffffff",
+            "button_2_bg_color": "",
+            "button_2_border_color": "#dddddd",
+            "button_2_text_hover_color": "#071c1f",
+            "button_2_bg_hover_color": "#ffffff",
+            "button_2_bg_hover_active_color": "#ffffff"
+          }
+        },
+        "slide_6g4AAL": {
+          "type": "slide",
+          "settings": {
+            "animated_circle_enable": false,
+            "slide_bg_image": "shopify://shop_images/1_2_9b7a02f8-3caa-4bde-863c-2191942ac0f1.jpg",
+            "mobile_image": "shopify://shop_images/1_ee55a789-33bf-4041-982b-5e4a195c518d.png",
+            "slide_image_enable": false,
+            "content_position_right": false,
+            "slide_sub_title": "",
+            "slide_title": "",
+            "slide_content": "",
+            "slide_button_1": "Shop Men",
+            "slide_button_1_url": "shopify://collections/menswear-1",
+            "slide_button_2": "",
+            "slide_button_2_url": "",
+            "large_padding_mobile": true,
+            "block_color_enable": false,
+            "overlay_color": "#071c1f",
+            "overlay_color_opatity": 0.8,
+            "circle_color": "#e53e29",
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "content_color": "#ffffff",
+            "content_border_color": "#576466",
+            "button_text_color": "#ffffff",
+            "button_bg_color": "#e53e29",
+            "button_text_hover_color": "#071c1f",
+            "button_bg_hover_color": "#071c1f",
+            "button_bg_hover_active_color": "#ffffff",
+            "button_2_text_color": "#ffffff",
+            "button_2_bg_color": "",
+            "button_2_border_color": "#dddddd",
+            "button_2_text_hover_color": "#071c1f",
+            "button_2_bg_hover_color": "#ffffff",
+            "button_2_bg_hover_active_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "slide_pyYhLY",
+        "slide_fEFqL9",
+        "slide_6g4AAL"
+      ],
+      "custom_css": [
+        ".btn-effect-1:after {width: 0%; height: 100%; top: 0; left: 0; color: #fff; background: #f9f9f9;}"
+      ],
+      "settings": {
+        "autoplay_true": true,
+        "autoplay_speed": 4000,
+        "section_color_enable": false,
+        "arrow_color": "#ffffff",
+        "arrow_border_color": "#576466",
+        "arrow_hover_bg_color": "#881983",
+        "arrow_hover_color": "#ffffff",
+        "dot_color": "#c0c0c0",
+        "dot_active_color": "#881983"
+      }
+    },
+    "multiple_banner_r83MFi": {
+      "type": "multiple-banner",
+      "blocks": {
+        "banner_gBfcJL": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/grid_photo_2_08a83138-de59-40d9-b0df-af8eefa350ce.jpg",
+            "banner_sub_title": "CHECKERED TEE",
+            "banner_title": "₹ 4,000",
+            "banner_url": "shopify://products/blue-check-lycra-t-shirt",
+            "banner_button_1": "",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 4,
+            "banner_column_md": 6,
+            "banner_column_sm": 4,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_XqyTxK": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_2055.jpg",
+            "banner_sub_title": "YUZU TOP",
+            "banner_title": "₹ 7,500",
+            "banner_url": "shopify://products/yuzu-tie-up-top",
+            "banner_button_1": "Button Title 1",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 4,
+            "banner_column_md": 6,
+            "banner_column_sm": 4,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_y8FUnF": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/grid_photo_2_2.jpg",
+            "banner_sub_title": "HOODIE TEE BLACK",
+            "banner_title": "₹ 5,500",
+            "banner_url": "shopify://products/hoodie-tee",
+            "banner_button_1": "Button Title 1",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 4,
+            "banner_column_md": 6,
+            "banner_column_sm": 4,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_yh7Cfe": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_2053.jpg",
+            "banner_sub_title": "MUDHAZE DRESS",
+            "banner_title": "₹9,500",
+            "banner_url": "shopify://products/mudhaze-panel-dress",
+            "banner_button_1": "Button Title 1",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 4,
+            "banner_column_md": 6,
+            "banner_column_sm": 4,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_fwPEeq": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/grid_photo_2_39bf9ac6-e596-4560-b6da-1af750caa4b9.jpg",
+            "banner_sub_title": "STRIPED SHIRT",
+            "banner_title": "₹ 4,500",
+            "banner_url": "shopify://products/zinnia-dress",
+            "banner_button_1": "",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 4,
+            "banner_column_md": 6,
+            "banner_column_sm": 4,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_4UxFVy": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_2058.jpg",
+            "banner_sub_title": "IRIS DRESS",
+            "banner_title": "₹ 12,000",
+            "banner_url": "shopify://products/iris-dress",
+            "banner_button_1": "Button Title 1",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 4,
+            "banner_column_md": 6,
+            "banner_column_sm": 4,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "section_padding_MDpC6X": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "section_padding_top_md": 30,
+            "section_padding_bottom_md": 30,
+            "section_padding_top_xs": 30,
+            "section_padding_bottom_xs": 30
+          }
+        }
+      },
+      "block_order": [
+        "banner_gBfcJL",
+        "banner_XqyTxK",
+        "banner_y8FUnF",
+        "banner_yh7Cfe",
+        "banner_fwPEeq",
+        "banner_4UxFVy",
+        "section_padding_MDpC6X"
+      ],
+      "settings": {
+        "section_title": "SHOP NEW ARRIVALS",
+        "section_sub_title": "",
+        "heading_style_handle": "style_two",
+        "heading_left_position": true
+      }
+    },
+    "featured_collection_fBcwVj": {
+      "type": "featured-collection",
+      "blocks": {
+        "section_padding_9MFLUN": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_padding_9MFLUN"
+      ],
+      "disabled": true,
+      "settings": {
+        "large_width_enable": true,
+        "section_title": "Shop Best Sellers",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": true,
+        "featured_product_handle": "women",
+        "view_all_button_enable": false,
+        "view_all_button_title": "View All",
+        "featured_product_limit_handle": 10,
+        "product_row": 1,
+        "product_column": 4,
+        "product_column_md": 3,
+        "product_column_sm": 3,
+        "autoplay_true": false,
+        "autoplay_speed": 7000
+      }
+    },
+    "category_list_2_yQX3Vz": {
+      "type": "category-list-2",
+      "blocks": {
+        "category_38UBq3": {
+          "type": "category",
+          "settings": {
+            "category_handle": "outerwear",
+            "section_sub_title": ""
+          }
+        },
+        "category_QUUc8d": {
+          "type": "category",
+          "settings": {
+            "category_handle": "dresses",
+            "section_sub_title": ""
+          }
+        },
+        "category_TibXwm": {
+          "type": "category",
+          "settings": {
+            "category_handle": "tops",
+            "section_sub_title": ""
+          }
+        },
+        "category_Unif7n": {
+          "type": "category",
+          "settings": {
+            "category_handle": "bottoms",
+            "section_sub_title": ""
+          }
+        },
+        "category_kDGJbE": {
+          "type": "category",
+          "disabled": true,
+          "settings": {
+            "category_handle": "bottoms",
+            "section_sub_title": ""
+          }
+        },
+        "section_padding_BiMAWx": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 0
+          }
+        }
+      },
+      "block_order": [
+        "category_38UBq3",
+        "category_QUUc8d",
+        "category_TibXwm",
+        "category_Unif7n",
+        "category_kDGJbE",
+        "section_padding_BiMAWx"
+      ],
+      "settings": {
+        "section_title": "",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": false,
+        "product_column": 2,
+        "product_column_md": 2,
+        "product_column_sm": 2,
+        "autoplay_true": false,
+        "autoplay_speed": 7000,
+        "section_color_enable": false,
+        "border_color": "#d1dae0",
+        "background_color": "#ffffff"
+      }
+    },
+    "multiple_banner_gqLPUP": {
+      "type": "multiple-banner",
+      "blocks": {
+        "banner_zdT3pK": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/Untitled_Artwork_11.png",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "shopify://collections/women",
+            "banner_button_1": "Shop Now",
+            "text_right_enable": true,
+            "button_enable": true,
+            "banner_column": 12,
+            "banner_column_md": 12,
+            "banner_column_sm": 12,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_4h6dFQ": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/Untitled_Artwork_12_9c1e3711-733a-4ad9-bdb2-aa6bcf86505e.jpg",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "",
+            "banner_button_1": "",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 6,
+            "banner_column_md": 6,
+            "banner_column_sm": 6,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_KARCK7": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_0853_50538316-612b-4d81-8858-906bb59df391.jpg",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "",
+            "banner_button_1": "",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 6,
+            "banner_column_md": 6,
+            "banner_column_sm": 6,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_M8kaz9": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_0521.jpg",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "",
+            "banner_button_1": "",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 12,
+            "banner_column_md": 12,
+            "banner_column_sm": 12,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_ptNdyY": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_0533.jpg",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "",
+            "banner_button_1": "",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 12,
+            "banner_column_md": 12,
+            "banner_column_sm": 12,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "section_padding_wqjqg8": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 30,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 30,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 30,
+            "section_padding_bottom_xs": 0
+          }
+        }
+      },
+      "block_order": [
+        "banner_zdT3pK",
+        "banner_4h6dFQ",
+        "banner_KARCK7",
+        "banner_M8kaz9",
+        "banner_ptNdyY",
+        "section_padding_wqjqg8"
+      ],
+      "settings": {
+        "section_title": "SHOP NEW ARRIVALS",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": true
+      }
+    },
+    "multiple_banner_PhDqVJ": {
+      "type": "multiple-banner",
+      "blocks": {
+        "banner_NUhq3X": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/page0.jpg",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "https://www.instagram.com/onetruepairing.in/?igsh=ZmpnaDRrbmNsb2J1",
+            "banner_button_1": "Button Title 1",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 12,
+            "banner_column_md": 12,
+            "banner_column_sm": 12,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "banner_VwpkN8": {
+          "type": "banner",
+          "settings": {
+            "banner_image": "shopify://shop_images/IMG_0533.jpg",
+            "banner_sub_title": "",
+            "banner_title": "",
+            "banner_url": "",
+            "banner_button_1": "Button Title 1",
+            "text_right_enable": false,
+            "button_enable": false,
+            "banner_column": 12,
+            "banner_column_md": 12,
+            "banner_column_sm": 12,
+            "block_color_enable": false,
+            "sub_title_color": "#e53e29",
+            "title_color": "#ffffff",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#ffffff"
+          }
+        },
+        "section_padding_FUz88d": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 30,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 30,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 30,
+            "section_padding_bottom_xs": 0
+          }
+        }
+      },
+      "block_order": [
+        "banner_NUhq3X",
+        "banner_VwpkN8",
+        "section_padding_FUz88d"
+      ],
+      "settings": {
+        "section_title": "FOLLOW US",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": true
+      }
+    },
+    "service_4_jeTJbX": {
+      "type": "service-4",
+      "blocks": {
+        "service_keq3TP": {
+          "type": "service",
+          "settings": {
+            "icon_image_enable": true,
+            "service_icon": "shopify://shop_images/free-shipping_499775b0-a54b-41f7-9147-806d88456052.png",
+            "service_icon_enable": true,
+            "service_icon_select": "parts",
+            "service_title": "Free Shipping",
+            "service_content": "<p>Free shipping on all prepaid orders. Free returns and exchanges.</p>",
+            "service_button_title": "",
+            "service_url": "",
+            "service_column": 4,
+            "service_column_md": 6,
+            "service_column_sm": 12,
+            "block_color_enable": false,
+            "title_color": "#071c1f",
+            "title_hover_color": "#e53e29",
+            "content_color": "#071c1f",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#e53e29"
+          }
+        },
+        "service_dFPkcP": {
+          "type": "service",
+          "settings": {
+            "icon_image_enable": true,
+            "service_icon": "shopify://shop_images/online-shopping.png",
+            "service_icon_enable": true,
+            "service_icon_select": "parts",
+            "service_title": "Secure     payment",
+            "service_content": "<p>Your payment information is processed securely.</p>",
+            "service_button_title": "",
+            "service_url": "",
+            "service_column": 4,
+            "service_column_md": 6,
+            "service_column_sm": 12,
+            "block_color_enable": false,
+            "title_color": "#071c1f",
+            "title_hover_color": "#e53e29",
+            "content_color": "#071c1f",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#e53e29"
+          }
+        },
+        "service_VCxfz9": {
+          "type": "service",
+          "settings": {
+            "icon_image_enable": true,
+            "service_icon": "shopify://shop_images/call.png",
+            "service_icon_enable": true,
+            "service_icon_select": "parts",
+            "service_title": "Customer Support",
+            "service_content": "<p>Need to contact us ? Just send us an e-mail at onetruepairing.com</p>",
+            "service_button_title": "",
+            "service_url": "",
+            "service_column": 4,
+            "service_column_md": 6,
+            "service_column_sm": 12,
+            "block_color_enable": false,
+            "title_color": "#071c1f",
+            "title_hover_color": "#e53e29",
+            "content_color": "#071c1f",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#e53e29"
+          }
+        },
+        "service_aAAwkB": {
+          "type": "service",
+          "disabled": true,
+          "settings": {
+            "icon_image_enable": true,
+            "service_icon": "shopify://shop_images/support.png",
+            "service_icon_enable": true,
+            "service_icon_select": "parts",
+            "service_title": "Customer service",
+            "service_content": "<p>We are available from monday to saturday to answer your questions.</p>",
+            "service_button_title": "",
+            "service_url": "",
+            "service_column": 3,
+            "service_column_md": 6,
+            "service_column_sm": 12,
+            "block_color_enable": false,
+            "title_color": "#071c1f",
+            "title_hover_color": "#e53e29",
+            "content_color": "#071c1f",
+            "button_color": "#8cb2b2",
+            "button_hover_color": "#e53e29"
+          }
+        },
+        "section_padding_XwJALh": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 10,
+            "section_padding_bottom": 10,
+            "section_padding_top_md": 10,
+            "section_padding_bottom_md": 10,
+            "section_padding_top_xs": 10,
+            "section_padding_bottom_xs": 10
+          }
+        },
+        "section_background_BcPBan": {
+          "type": "section_background",
+          "settings": {
+            "section_bg_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "service_keq3TP",
+        "service_dFPkcP",
+        "service_VCxfz9",
+        "service_aAAwkB",
+        "section_padding_XwJALh",
+        "section_background_BcPBan"
+      ],
+      "settings": {
+        "section_title": "",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": false
+      }
+    },
+    "custom_liquid_N9CcLB": {
+      "type": "custom-liquid",
+      "blocks": {
+        "section_padding_Fph8JN": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 100,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 80,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 60
+          }
+        }
+      },
+      "block_order": [
+        "section_padding_Fph8JN"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_title": "",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": false,
+        "custom_liquid": "<style>\nvideo {\nwidth: 100%;\nheight: auto;\ndisplay: block;\nmargin: 0 auto;\n}\n</style>\n<video muted autoplay playsinline loop>\n    <source src=\"https://cdn.shopify.com/videos/c/o/v/229e5710a6a34c3f8b931b9a65b7c372.mp4\"\n                  type=\"video/mp4\">\n    <source src=\"/media/cc0-videos/flower.mp4\"\n                  type=\"video/mp4\">\n</video>\n<a class=\"video-btn\" href=\"#\">Shop Now</a>"
+      }
+    },
+    "custom_liquid_cECXzf": {
+      "type": "custom-liquid",
+      "blocks": {
+        "section_padding_GBQe9w": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 0,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 0,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 0
+          }
+        }
+      },
+      "block_order": [
+        "section_padding_GBQe9w"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_title": "",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": false,
+        "custom_liquid": "<style>\nvideo {\nwidth: 100%;\nheight: auto;\ndisplay: block;\nmargin: 0 auto;\n}\n</style>\n<video muted autoplay playsinline loop>\n    <source src=\"https://cdn.shopify.com/videos/c/o/v/2c20ae5d153848d6b83370f482541789.mp4\"\n                  type=\"video/mp4\">\n    <source src=\"/media/cc0-videos/flower.mp4\"\n                  type=\"video/mp4\">\n</video>\n\n<a class=\"video-btn\" href=\"#\">Shop Now</a>"
+      }
+    },
+    "about_with_image_old_iKyUgW": {
+      "type": "about-with-image-old",
+      "blocks": {
+        "section_padding_UQKqLB": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 0,
+            "section_padding_bottom": 95,
+            "section_padding_top_md": 0,
+            "section_padding_bottom_md": 70,
+            "section_padding_top_xs": 0,
+            "section_padding_bottom_xs": 50
+          }
+        }
+      },
+      "block_order": [
+        "section_padding_UQKqLB"
+      ],
+      "disabled": true,
+      "settings": {
+        "row_reverse": false,
+        "about_image": "shopify://shop_images/T_repair.webp",
+        "sub_title": "",
+        "title": "Come over and get ready for the best Product experience of your life.",
+        "main_content": "<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>",
+        "show_button": true,
+        "button_title": "View Full Story",
+        "button_url": "#",
+        "section_color_enable": false,
+        "button_text_color": "#ffffff",
+        "button_bg_color": "#e53e29",
+        "button_text_hover_color": "#071c1f",
+        "button_bg_hover_color": "#071c1f"
+      }
+    },
+    "latest_blog_QBttB3": {
+      "type": "latest-blog",
+      "blocks": {
+        "section_padding_RDBnjt": {
+          "type": "section_padding",
+          "settings": {
+            "section_padding_top": 50,
+            "section_padding_bottom": 50,
+            "section_padding_top_md": 50,
+            "section_padding_bottom_md": 50,
+            "section_padding_top_xs": 50,
+            "section_padding_bottom_xs": 50
+          }
+        }
+      },
+      "block_order": [
+        "section_padding_RDBnjt"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_title": "Latest News & Blog",
+        "section_sub_title": "",
+        "heading_style_handle": "style_one",
+        "heading_left_position": false,
+        "blog_handle": "news",
+        "blog_limit_handle": 4,
+        "blog_style": "style_2",
+        "author_name_enable": false,
+        "comment_enable": true,
+        "blog_description_enable": true,
+        "blog_date_enable": true,
+        "read_more_title": "Read More",
+        "blog_column": 3,
+        "blog_column_md": 2,
+        "blog_column_sm": 1,
+        "autoplay_true": false,
+        "autoplay_speed": 7000
+      }
+    }
+  },
+  "order": [
+    "b6c7552a-b361-4821-b329-92ec3340e6ad",
+    "multiple_banner_r83MFi",
+    "featured_collection_fBcwVj",
+    "category_list_2_yQX3Vz",
+    "multiple_banner_gqLPUP",
+    "multiple_banner_PhDqVJ",
+    "service_4_jeTJbX",
+    "custom_liquid_N9CcLB",
+    "custom_liquid_cECXzf",
+    "about_with_image_old_iKyUgW",
+    "latest_blog_QBttB3"
+  ]
+}
