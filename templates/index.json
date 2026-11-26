@@ -147,6 +147,13 @@
     "new_arrival_BXWj96": {
       "type": "NewArrival",
       "blocks": {
+        "product_nPkrwr": {
+          "type": "product",
+          "settings": {
+            "product": "iris-dress",
+            "custom_image": "shopify://shop_images/IMG_2058.jpg"
+          }
+        },
         "product_VDFWRQ": {
           "type": "product",
           "settings": {
@@ -184,6 +191,7 @@
         }
       },
       "block_order": [
+        "product_nPkrwr",
         "product_VDFWRQ",
         "product_MAfmGq",
         "product_YaRH3R",
@@ -356,6 +364,7 @@
         "banner_DBHXyd",
         "section_padding_zbbdfL"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "SHOP NEW ARRIVALS",
         "section_sub_title": "",
