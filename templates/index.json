@@ -292,7 +292,8 @@
         "section_title": "SHOP NEW ARRIVALS",
         "section_sub_title": "",
         "heading_style_handle": "style_two",
-        "heading_left_position": true
+        "heading_left_position": true,
+        "product_card_layout": true
       }
     },
     "featured_collection_fBcwVj": {

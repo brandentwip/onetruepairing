@@ -1,16 +1,88 @@
+{%- assign has_product_grid = section.settings.product_card_layout -%}
+
 {%- style -%}
+  #section-{{ section.id }} .multiple-banner__grid {
+    display: grid;
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+  }
+
+  #section-{{ section.id }} .multiple-banner__column {
+    box-sizing: border-box;
+    grid-column: span var(--banner-columns-sm);
+    max-width: none;
+    min-width: 0;
+    width: auto;
+  }
+
+  @media (min-width: 768px) {
+    #section-{{ section.id }} .multiple-banner__column {
+      grid-column: span var(--banner-columns-md);
+    }
+  }
+
+  @media (min-width: 992px) {
+    #section-{{ section.id }} .multiple-banner__column {
+      grid-column: span var(--banner-columns-lg);
+    }
+  }
+
+  #section-{{ section.id }}.multiple-banner--product-grid .multiple-banner__grid {
+    border-left: 1px solid rgba(102, 102, 102, 0.13);
+    border-top: 1px solid rgba(102, 102, 102, 0.13);
+    border-bottom: 1px solid rgba(102, 102, 102, 0.13);
+  }
+
+  #section-{{ section.id }} .multiple-banner__column--card {
+    padding: 0;
+  }
+
+  #section-{{ section.id }} .multiple-banner__card {
+    margin: 0;
+    border-right: 1px solid rgba(102, 102, 102, 0.13);
+  }
+
+  #section-{{ section.id }} .multiple-banner__card .ltn__banner-info {
+    position: relative;
+    left: auto;
+    top: auto;
+    padding: 0;
+    text-align: center;
+  }
+
+  #section-{{ section.id }} .multiple-banner__card .ltn__banner-info .white-color {
+    color: #333;
+    font-size: 16px;
+    margin: 0;
+  }
+
+  #section-{{ section.id }} .multiple-banner__card .ltn__banner-info .product-price {
+    color: #333 !important;
+    font-size: 18px;
+    font-weight: 500;
+  }
+
+  #section-{{ section.id }} .multiple-banner__card .ltn__banner-img:hover img {
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  #section-{{ section.id }}.multiple-banner--product-grid .section-title-area {
+    margin: 0;
+  }
+
+  #section-{{ section.id }}.multiple-banner--product-grid .section-title-area .section-title {
+    font-size: 30px;
+  }
+
   @media (max-width: 767px) {
-    {%- for block in section.blocks -%}
-      {%- if block.type == 'banner' or block.type == 'banner_two_row' -%}
-        {%- assign mobile_column_width = block.settings.banner_column_sm | times: 100.0 | divided_by: 12 -%}
-        #section-{{ section.id }} .row.justify-content-center > .col-sm-{{ block.settings.banner_column_sm }} {
-          -ms-flex: 0 0 {{ mobile_column_width }}%;
-          flex: 0 0 {{ mobile_column_width }}%;
-          max-width: {{ mobile_column_width }}%;
-          width: {{ mobile_column_width }}%;
-        }
-      {%- endif -%}
-    {%- endfor -%}
+    #section-{{ section.id }} .multiple-banner__card .ltn__banner-info .white-color,
+    #section-{{ section.id }} .multiple-banner__card .ltn__banner-info .product-price {
+      font-size: 12px;
+    }
+
+    #section-{{ section.id }}.multiple-banner--product-grid .section-title-area .section-title {
+      font-size: 15px;
+    }
   }
 
   {%- for block in section.blocks -%}
@@ -33,7 +105,7 @@
 
 {%- render 'section-style' -%}
 <!-- BANNER AREA START -->
-<div class="ltn__banner-area plr--9" data-section="multipleBanner" id="section-{{ section.id }}">
+<div class="ltn__banner-area plr--9{% if has_product_grid %} multiple-banner--product-grid{% endif %}" data-section="multipleBanner" id="section-{{ section.id }}">
   <div class="container-fluid">
      {%- if section.settings.section_title != '' or section.settings.section_sub_title != '' -%}
     <div class="row">
@@ -42,12 +114,16 @@
       </div>
     </div>
     {%- endif -%}
-    <div class="row justify-content-center">
+    <div class="row justify-content-center multiple-banner__grid">
       {%- for block in section.blocks -%}
+      {%- assign product_grid_card = false -%}
+      {%- if has_product_grid and block.type == 'banner' -%}
+        {%- assign product_grid_card = true -%}
+      {%- endif -%}
       {%- case block.type -%}
       {%- when 'banner' -%}
-      <div class="col-sm-{{ block.settings.banner_column_sm }} col-md-{{ block.settings.banner_column_md }} col-lg-{{ block.settings.banner_column }}" {{ block.shopify_attributes }}>
-        <div class="ltn__banner-item ltn__banner-style-3 {% if block.settings.text_right_enable %}ltn__banner-style-4{% endif %}" id="block-{{ block.id }}">
+      <div class="multiple-banner__column col-sm-{{ block.settings.banner_column_sm }} col-md-{{ block.settings.banner_column_md }} col-lg-{{ block.settings.banner_column }}{% if product_grid_card %} multiple-banner__column--card{% endif %}" style="--banner-columns-sm: {{ block.settings.banner_column_sm }}; --banner-columns-md: {{ block.settings.banner_column_md }}; --banner-columns-lg: {{ block.settings.banner_column }};" {{ block.shopify_attributes }}>
+        <div class="ltn__banner-item ltn__banner-style-3 {% if block.settings.text_right_enable %}ltn__banner-style-4{% endif %}{% if product_grid_card %} multiple-banner__card{% endif %}" id="block-{{ block.id }}">
           <div class="ltn__banner-img">
             {%- if block.settings.banner_image -%}
             {%- assign image = block.settings.banner_image -%}
@@ -98,7 +174,7 @@
         </div>
       </div>
       {%- when 'banner_two_row' -%}
-      <div class="col-sm-{{ block.settings.banner_column_sm }} col-md-{{ block.settings.banner_column_md }} col-lg-{{ block.settings.banner_column }}" {{ block.shopify_attributes }}>
+      <div class="multiple-banner__column col-sm-{{ block.settings.banner_column_sm }} col-md-{{ block.settings.banner_column_md }} col-lg-{{ block.settings.banner_column }}" style="--banner-columns-sm: {{ block.settings.banner_column_sm }}; --banner-columns-md: {{ block.settings.banner_column_md }}; --banner-columns-lg: {{ block.settings.banner_column }};" {{ block.shopify_attributes }}>
         <div class="row">
           <div class="col-lg-12">
             <div class="ltn__banner-item {% if block.settings.text_right_enable %}ltn__banner-style-3 ltn__banner-style-4{% else %}ltn__banner-style-3{% endif %}" id="block-{{ block.id }}">
@@ -254,7 +330,13 @@
           "label": "Heading position in left",
           "default": false
       	},
-		
+        {
+          "type": "checkbox",
+          "id": "product_card_layout",
+          "label": "Product card layout",
+          "info": "Show banner titles and prices below images in a responsive grid.",
+          "default": false
+        }
 	],
 	"blocks":[
           {
