@@ -1,4 +1,18 @@
 {%- style -%}
+  @media (max-width: 767px) {
+    {%- for block in section.blocks -%}
+      {%- if block.type == 'banner' or block.type == 'banner_two_row' -%}
+        {%- assign mobile_column_width = block.settings.banner_column_sm | times: 100.0 | divided_by: 12 -%}
+        #section-{{ section.id }} .row.justify-content-center > .col-sm-{{ block.settings.banner_column_sm }} {
+          -ms-flex: 0 0 {{ mobile_column_width }}%;
+          flex: 0 0 {{ mobile_column_width }}%;
+          max-width: {{ mobile_column_width }}%;
+          width: {{ mobile_column_width }}%;
+        }
+      {%- endif -%}
+    {%- endfor -%}
+  }
+
   {%- for block in section.blocks -%}
     {%- if block.settings.block_color_enable -%}
       #section-{{ section.id }} #block-{{ block.id }} .ltn__secondary-color {
