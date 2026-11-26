@@ -217,7 +217,7 @@
         "card_bg": "#f7f3ea",
         "border_color": "#e5e5e5",
         "side_padding": 25,
-        "padding_top": 0,
+        "padding_top": 35,
         "padding_bottom": 40
       }
     },
