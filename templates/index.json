@@ -144,9 +144,8 @@
         "dot_active_color": "#881983"
       }
     },
-    "new_arrival_ye9BeX": {
+    "new_arrival_BXWj96": {
       "type": "NewArrival",
-      "disabled": true,
       "name": "New Arrivals Grid",
       "settings": {
         "heading": "Shop New Arrivals",
@@ -890,7 +889,7 @@
   },
   "order": [
     "b6c7552a-b361-4821-b329-92ec3340e6ad",
-    "new_arrival_ye9BeX",
+    "new_arrival_BXWj96",
     "multiple_banner_JPpQnT",
     "featured_collection_fBcwVj",
     "category_list_2_yQX3Vz",
