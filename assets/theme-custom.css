@@ -4828,6 +4828,10 @@ button.predictive-search__item {
 	margin-right: 10px;
 }
 
+.template-collection .ltn__product-item-3 .product-price del {
+	display: inline;
+}
+
 .ltn__product-item-3 .product-price del+span {
 	color: var(--ltn__secondary-color);
 }
