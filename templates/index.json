@@ -23,8 +23,8 @@
             "slide_sub_title": "",
             "slide_title": "",
             "slide_content": "",
-            "slide_button_1": "SHOP SALE",
-            "slide_button_1_url": "shopify://collections/clearance-sale",
+            "slide_button_1": "Shop Women",
+            "slide_button_1_url": "shopify://collections/women",
             "slide_button_2": "",
             "slide_button_2_url": "",
             "large_padding_mobile": true,
@@ -49,7 +49,7 @@
             "button_2_bg_hover_active_color": "#ffffff"
           }
         },
-        "slide_fEFqL9": {
+        "slide_jaWqEm": {
           "type": "slide",
           "settings": {
             "animated_circle_enable": false,
@@ -126,7 +126,7 @@
       },
       "block_order": [
         "slide_pyYhLY",
-        "slide_fEFqL9",
+        "slide_jaWqEm",
         "slide_6g4AAL"
       ],
       "custom_css": [
@@ -723,6 +723,7 @@
         "section_padding_XwJALh",
         "section_background_BcPBan"
       ],
+      "disabled": true,
       "settings": {
         "section_title": "",
         "section_sub_title": "",
