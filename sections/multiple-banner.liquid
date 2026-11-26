@@ -1,3 +1,22 @@
+{%- style -%}
+  {%- for block in section.blocks -%}
+    {%- if block.settings.block_color_enable -%}
+      #section-{{ section.id }} #block-{{ block.id }} .ltn__secondary-color {
+        color: {{ block.settings.sub_title_color }} !important;
+      }
+      #section-{{ section.id }} #block-{{ block.id }} .white-color {
+        color: {{ block.settings.title_color }};
+      }
+      #section-{{ section.id }} #block-{{ block.id }}.ltn__banner-style-3 .banner-button a {
+        color: {{ block.settings.button_color }};
+      }
+      #section-{{ section.id }} #block-{{ block.id }}.ltn__banner-style-3 .banner-button a:hover {
+        color: {{ block.settings.button_hover_color }};
+      }
+    {%- endif -%}
+  {%- endfor -%}
+{%- endstyle -%}
+
 {%- render 'section-style' -%}
 <!-- BANNER AREA START -->
 <div class="ltn__banner-area plr--9" data-section="multipleBanner" id="section-{{ section.id }}">
@@ -64,23 +83,6 @@
           {%- endif -%}
         </div>
       </div>
-      {%- if block.settings.block_color_enable -%}
-      <style>
-        #block-{{ block.id }} .ltn__secondary-color {
-          color: {{ block.settings.sub_title_color }} !important;
-        }
-        #block-{{ block.id }} .white-color {
-          color: {{ block.settings.title_color }};
-        }
-        #block-{{ block.id }}.ltn__banner-style-3 .banner-button a {
-          color: {{ block.settings.button_color }};
-        }
-        #block-{{ block.id }}.ltn__banner-style-3 .banner-button a:hover {
-          color: {{ block.settings.button_hover_color }};
-        }
-      </style>
-      {%- endif -%}
-
       {%- when 'banner_two_row' -%}
       <div class="col-sm-{{ block.settings.banner_column_sm }} col-md-{{ block.settings.banner_column_md }} col-lg-{{ block.settings.banner_column }}" {{ block.shopify_attributes }}>
         <div class="row">
@@ -184,22 +186,6 @@
               {%- endif -%}
             </div>
           </div>
-          {%- if block.settings.block_color_enable -%}
-          <style>
-            #block-{{ block.id }} .ltn__secondary-color {
-              color: {{ block.settings.sub_title_color }} !important;
-            }
-            #block-{{ block.id }} .white-color {
-              color: {{ block.settings.title_color }};
-            }
-            #block-{{ block.id }}.ltn__banner-style-3 .banner-button a {
-              color: {{ block.settings.button_color }};
-            }
-            #block-{{ block.id }}.ltn__banner-style-3 .banner-button a:hover {
-              color: {{ block.settings.button_hover_color }};
-            }
-          </style>
-          {%- endif -%}
         </div>
       </div>
       
