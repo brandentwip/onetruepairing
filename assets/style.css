@@ -19221,6 +19221,9 @@ aside.filter-collapse-hide {
 .ltn__product-item-3 .product-price del {
 	display: none;
 }
+.template-collection .ltn__product-item-3 .product-price del {
+	display: inline;
+}
 #section-template--18773471068413__featured_collection_fBcwVj .container-fluid {
 	padding: 0;
 }
