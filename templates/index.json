@@ -146,6 +146,50 @@
     },
     "new_arrival_BXWj96": {
       "type": "NewArrival",
+      "blocks": {
+        "product_VDFWRQ": {
+          "type": "product",
+          "settings": {
+            "product": "denim-line-lyocell-shirt",
+            "custom_image": "shopify://shop_images/grid_photo_2_39bf9ac6-e596-4560-b6da-1af750caa4b9.jpg"
+          }
+        },
+        "product_MAfmGq": {
+          "type": "product",
+          "settings": {
+            "product": "mudhaze-panel-dress",
+            "custom_image": "shopify://shop_images/IMG_2053.jpg"
+          }
+        },
+        "product_YaRH3R": {
+          "type": "product",
+          "settings": {
+            "product": "hoodie-tee",
+            "custom_image": "shopify://shop_images/grid_photo_2_2.jpg"
+          }
+        },
+        "product_inhRzk": {
+          "type": "product",
+          "settings": {
+            "product": "yuzu-tie-up-top",
+            "custom_image": "shopify://shop_images/IMG_2055.jpg"
+          }
+        },
+        "product_8XxQQK": {
+          "type": "product",
+          "settings": {
+            "product": "blue-check-lycra-t-shirt",
+            "custom_image": "shopify://shop_images/grid_photo_2_08a83138-de59-40d9-b0df-af8eefa350ce.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "product_VDFWRQ",
+        "product_MAfmGq",
+        "product_YaRH3R",
+        "product_inhRzk",
+        "product_8XxQQK"
+      ],
       "name": "New Arrivals Grid",
       "settings": {
         "heading": "Shop New Arrivals",
