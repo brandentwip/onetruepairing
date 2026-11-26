@@ -113,10 +113,28 @@
     <h2 class="na__heading">{{ section.settings.heading }}</h2>
   {%- endif -%}
 
-  {%- if collection != blank and collection.products_count > 0 -%}
+  {%- liquid
+    assign use_blocks = false
+    assign total = 0
+    if section.blocks.size > 0
+      assign use_blocks = true
+      assign total = section.blocks.size
+    elsif collection != blank
+      assign total = section.settings.products_to_show
+    endif
+  -%}
+
+  {%- if total > 0 -%}
     <div class="na__grid">
-      {%- for product in collection.products limit: section.settings.products_to_show -%}
-        <a href="{{ product.url }}" class="na__card">
+      {%- for i in (1..total) -%}
+        {%- assign idx = i | minus: 1 -%}
+        {%- if use_blocks -%}
+          {%- assign product = section.blocks[idx].settings.product -%}
+        {%- else -%}
+          {%- assign product = collection.products[idx] -%}
+        {%- endif -%}
+        {%- if product == blank -%}{%- continue -%}{%- endif -%}
+        <a href="{{ product.url }}" class="na__card" {% if use_blocks %}{{ section.blocks[idx].shopify_attributes }}{% endif %}>
           <span class="na__media">
             {%- if product.featured_image -%}
               {{
@@ -160,13 +178,13 @@
       {%- endfor -%}
     </div>
 
-    {%- if section.settings.show_view_all -%}
+    {%- if section.settings.show_view_all and collection != blank -%}
       <div class="na__more">
         <a href="{{ collection.url }}">{{ section.settings.view_all_label }}</a>
       </div>
     {%- endif -%}
   {%- else -%}
-    <p style="padding: 0 {{ section.settings.side_padding }}px;">Select a collection in the section settings.</p>
+    <p style="padding: 0 {{ section.settings.side_padding }}px;">Add Product blocks (or select a collection) in the section settings.</p>
   {%- endif -%}
 </section>
 
@@ -186,7 +204,7 @@
       ],
       "default": "left"
     },
-    { "type": "collection", "id": "collection", "label": "Collection" },
+    { "type": "collection", "id": "collection", "label": "Collection (only used if no Product blocks are added)" },
     { "type": "range", "id": "products_to_show", "min": 3, "max": 24, "step": 1, "label": "Products to show", "default": 6 },
     { "type": "checkbox", "id": "show_price", "label": "Show price", "default": true },
     { "type": "checkbox", "id": "hover_image", "label": "Show second image on hover", "default": false },
@@ -229,8 +247,25 @@
     { "type": "range", "id": "padding_top", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Padding top", "default": 0 },
     { "type": "range", "id": "padding_bottom", "min": 0, "max": 150, "step": 5, "unit": "px", "label": "Padding bottom", "default": 40 }
   ],
+  "blocks": [
+    {
+      "type": "product",
+      "name": "Product",
+      "settings": [
+        { "type": "product", "id": "product", "label": "Product" }
+      ]
+    }
+  ],
   "presets": [
-    { "name": "New Arrivals Grid", "category": "Collection" }
+    {
+      "name": "New Arrivals Grid",
+      "category": "Collection",
+      "blocks": [
+        { "type": "product" },
+        { "type": "product" },
+        { "type": "product" }
+      ]
+    }
   ]
 }
 {% endschema %}
