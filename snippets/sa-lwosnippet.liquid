@@ -1,0 +1,455 @@
+<div id="SmsalertLoginForm" {% if showform == false %} style="transform:scale(0);height:0;" {% endif %} class="customer"><div class="form-vertical"><form method="post"><div class="sa-login control-wrapper clearfix large_form field-group field"><input type="text" name="sa_phone_no" id="sa_phone_no" class="phone-valid input-full field__input field-input" autocorrect="off" autocapitalize="off" placeholder="Phone"><label for="Phone" class="label--hidden">Phone</label></div><div class="text-center content-wrapper"><p><button class="sa_login_submit btn button field-input">Login with OTP</button><a href="#" class="goback" {% if showform %} style="display:none;" {% else %} style="display:block;" {% endif %}>Back</a></p></div></form></div></div>			<script src="/apps/sa/check_plugin.js?shop=iktarabanaras.myshopify.com"></script> 
+			<script>
+			if(typeof plugin_logged_in != "undefined" && plugin_logged_in==1 && typeof onLoadLoginPage != 'function')
+            {
+				var blank_number = 'Please enter your mobile number.';
+				var blank_otp = 'Please enter OTP.';
+				var invalid_otp = 'Invalid OTP.';
+				var blank_pwd = 'Please enter password.';
+				var invalid_number = 'Invalid phone number.';
+				var processing_txt = 'Please Wait....';
+				var validate_btn = 'Validate OTP';
+				var resend_txt = 'Resending OTP...';
+				var resend_btn = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -50 512 512" width="20px" height="15px" fill="#F45B4F"><path d="M447.5 224H456c13.3 0 24-10.7 24-24V72c0-9.7-5.8-18.5-14.8-22.2s-19.3-1.7-26.2 5.2L397.4 96.6c-87.6-86.5-228.7-86.2-315.8 1c-87.5 87.5-87.5 229.3 0 316.8s229.3 87.5 316.8 0c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0c-62.5 62.5-163.8 62.5-226.3 0s-62.5-163.8 0-226.3c62.2-62.2 162.7-62.5 225.3-1L311 183c-6.9 6.9-8.9 17.2-5.2 26.2s12.5 14.8 22.2 14.8H447.5z"/></svg>Resend OTP';
+				var submit_btn = 'Submit';
+				var otp_sent_txt = 'An OTP has been sent to ';
+				var blank_cnf_pwd = 'Please enter Confirm Password.';
+				var pwd_not_match = 'Password and Confirm Password should be match.';
+				var pwd_change_heading = 'Password Change';
+				var pwd_placeholder = 'Enter Password';
+				var cnf_placeholder = 'Enter Confirm Password';
+				var pwd_changed = 'Password updated successfully';
+				var pwd_changed_error = 'Password cannot be changed.';
+				var pwd_modal_text = 'Please change your password';
+				var saloadScript = function(url, callback){
+						var script = document.createElement('script')
+						script.type = 'text/javascript';
+						if (script.readyState){  /* IE */
+							script.onreadystatechange = function(){
+								if (script.readyState == 'loaded' ||
+										script.readyState == 'complete'){
+									script.onreadystatechange = null;
+									callback();
+								}
+							};
+						} else {  /* Others */
+							script.onload = function(){
+								callback();
+							};
+						}
+						script.src = url;
+						document.getElementsByTagName('head')[0].appendChild(script);
+					}
+		        var saloadLink = function(url)
+				{
+					var style;
+					style = document.createElement('link');
+					style.type = 'text/css';
+					style.rel = 'stylesheet';
+
+					style.href = url;
+					return document.getElementsByTagName('head')[0].appendChild(style);
+				}
+		
+				var  sa_jq ='';  var sa_form_obj = '';    
+				document.addEventListener('DOMContentLoaded', function() {
+				
+					if(typeof jQuery === 'undefined'){
+					saloadScript('https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js?v=smsalert', function(){
+							sa_jq = jQuery.noConflict();
+							onLoadLoginPage();
+						});
+					}
+					else
+					{
+						sa_jq = jQuery;
+						onLoadLoginPage();
+					}
+					saloadLink('https://iktarabanaras.myshopify.com/apps/sa/sa_validate_otp.css');
+				});
+				var onLoadLoginPage = function(){
+					if(sa_jq('#SALoginForm').length == 0)
+					{
+					sa_jq('body').append('<div id="SALoginForm"><form method="post" action="/account/login"><input type="hidden" name="form_type" value="customer_login"><input type="hidden" name="customer[email]" id="SACustomerEmail"><input type="hidden" name="customer[password]" id="SACustomerPassword"><input type="hidden" name="checkout_url" value="'+new URLSearchParams(location.search).get('checkout_url')+'"></form></div><div class="login_otp_modal sa_modal " data-modal-close="" style="display:none;" id="sa_otp_form"><div class="sa_modal_dialog "><div class="sa-modal-content"><div class="sa_modal_header"><div class="sa-icon-close"><span></span></div></div><div class="sa_modal_body sa_modal_form_container"><div class="form-group sa_heading"><svg class="checkmark sa-hide cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark_circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark_check" stroke-width="4" fill="none" d="M14.1 14.1l23.8 23.8 m0,-23.8 l-23.8,23.8"></path></svg><svg class="checkmark sa-hide right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle> <path class="checkmark__check" stroke-width="4" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg><span class="sa-text sa_error"></span></div><div class="smsalert_validate_field sa-hide"><div class="form-group sa_otp_txt"><input type="number"  placeholder="Enter OTP" class="form-control input-lg required" name="sa_otp" id="sa_otp"></div><div class="form-group"><button type="button" class="btn button sa_login_otp_submit">'+validate_btn+'</button> <span class="sa_otp_form_link sa_resend_login sa-hide">'+resend_btn+'</span><span class="timer"><svg class="progress-ring" width="50px" height="50px"><circle stroke="#f3f5f6" stroke-width="2" fill="transparent" r="20" cx="25" cy="25"></circle><circle class="progress-ring__circle" stroke="#d4d4d4" stroke-width="2" fill="transparent" r="20" cx="25" cy="25"></circle></svg> <span class="time">00</span></span></div></div></div></div><div class="ring sa-hide"><span></span></div></div>');
+					}
+				 sa_jq('.smsalert-btn').on('click',function (event) {
+                   event.stopImmediatePropagation();
+                   if(sa_jq(this).parents('.loginotp').parent().siblings('#customer_login').length == 0)
+                   {
+                     sa_jq(this).parents('.loginotp').parent().siblings().find('#customer_login').css({'transform': 'scale(0)','transition': 'all 0.5s','height': '0'});
+                   }
+                   else{
+                     sa_jq(this).parents('.loginotp').parent().siblings('#customer_login').css({'transform': 'scale(0)','transition': 'all 0.5s','height': '0'});
+                   }
+					
+                    sa_jq(this).parents('.loginotp').css('display','none');
+					sa_jq(this).parents('.loginotp').next('#SmsalertLoginForm').css({'transform': 'scale(1)','transition': 'all 0.5s','height': 'auto'});
+				  });
+				  sa_jq('.goback').on('click',function (event) {
+					event.stopImmediatePropagation();
+				    if(sa_jq(this).parents('#SmsalertLoginForm').parent().siblings('#customer_login').length == 0)
+                    {
+                     sa_jq(this).parents('#SmsalertLoginForm').parent().siblings().find('#customer_login').css({'transform': 'scale(1)','transition': 'all 0.5s','height': 'auto'});
+                    }
+                    else{
+                     sa_jq(this).parents('#SmsalertLoginForm').parent().siblings('#customer_login').css({'transform': 'scale(1)','transition': 'all 0.5s','height': 'auto'});
+                    }
+                    sa_jq(this).parents('#SmsalertLoginForm').css({'transform': 'scale(0)','transition': 'all 0.5s','height': '0'});
+					sa_jq(this).parents('#SmsalertLoginForm').siblings('.loginotp').css('display','block');
+				  });	
+				var phone = localStorage.getItem('sa_phone');
+				sa_jq('#sa_phone_no').val(phone);
+				sa_jq('body').on('keyup', '.login_otp_modal #sa_otp', function (event) {
+                        sa_jq('.login_otp_modal .cross,.login_otp_modal .right').addClass('sa-hide');
+                        sa_jq('.login_otp_modal .sa-text').html('')					   
+					});
+					
+				sa_jq('.sa_login_submit').on('click',function (event) {
+                         sa_jq('.login_otp_modal .cross,.login_otp_modal .right').addClass('sa-hide');					
+					      event.stopImmediatePropagation();
+						  sa_form_obj = sa_jq(this).parents('form');
+						  var phone_no = sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]:hidden').val()).replace(/\s|\+/g,'');
+						  if(phone_no=='')
+						  {
+							phone_no = sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]').val()).replace(/\s|\+/g,''); 
+						  }
+						  var pattern = /^[0-9]+/;
+						  if (phone_no == '') {
+							  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+							  sa_jq('.login_otp_modal .sa-text').html(blank_number).show();
+							  sa_jq(sa_form_obj).find('#sa_phone_no').css('border-color', 'red');
+							  sa_jq('.login_otp_modal.sa_modal').css('display','block');
+						  }
+						  else if (!pattern.test(phone_no)) {
+							  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+							  sa_jq('.login_otp_modal .sa-text').html(invalid_number).show();
+							  sa_jq(sa_form_obj).find('#sa_phone_no').css('border-color', 'red');
+							  sa_jq('.login_otp_modal.sa_modal').css('display','block');
+						  }
+						  else if (phone_no.length > 15 || phone_no.length < 10) {
+							  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+							  sa_jq('.login_otp_modal .sa-text').html(invalid_number).show();
+							  sa_jq(sa_form_obj).find('#sa_phone_no').css('border-color', 'red');
+							  sa_jq('.login_otp_modal.sa_modal').css('display','block');
+						  }
+						  else {
+							  sa_jq('.login_otp_modal .ring').removeClass('sa-hide');
+                              sa_jq('.login_otp_modal .sa-modal-content').css('transform', 'scale(0)');
+							  sa_jq('.login_otp_modal .sa-text').html('');
+							  sa_jq(sa_form_obj).find('#sa_phone_no').css('border-color', '#ccc');
+							  
+							  sa_jq(this).attr('disabled',true).html('').addClass('loading');
+							  
+							  sendLoginOTP(phone_no);
+						  }
+						  return false;
+						  });
+				
+						  //re-send process starts here
+						  sa_jq('.sa_resend_login').on('click',function (event) {
+                              event.stopImmediatePropagation();
+							  var phone_no 	= sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]:hidden').val()).replace(/\s|\+/g,'');
+							  if(phone_no=='')
+							  {
+								phone_no 	= sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]').val()).replace(/\s|\+/g,'');
+							  }
+							  sa_jq(this).text(resend_txt).attr('disabled',true);
+							  sendLoginOTP(phone_no,true);
+  
+							  return false;
+						  });
+						  sa_jq('.sa-icon-close').on('click',function (event) {
+							  var obj = sa_jq(this);
+							   var modal_style = obj.parents('.sa_modal').attr('data-modal-close');
+								obj.parents('.sa_modal').addClass(modal_style+'Out');
+								obj.parents('.sa_modal').not('.smsalert-modal').hide('slow');
+									setTimeout(function() {
+										obj.parents().removeClass(modal_style+'Out');
+									}, 500);
+						  });
+						  
+						  //change password process starts here
+						  sa_jq('body').on('click','.sa_pwd_submit',function () {
+						  sa_jq('.login_otp_modal .cross,.login_otp_modal .right').addClass('sa-hide');   
+						  var password 	= sa_jq.trim(sa_jq('#sa_password').val());
+						  var conf_password 		= sa_jq('#sa_conf_password').val();
+						  var phone_no 	= sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]:hidden').val()).replace(/\s|\+/g,'');
+						  if(phone_no=='')
+						  {
+							phone_no 	= sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]').val()).replace(/\s|\+/g,'');
+						  }
+  
+						  if (password == '') {
+							  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+							  sa_jq('.login_otp_modal .sa-text').html(blank_pwd).show();
+							  sa_jq('#sa_password').css('border-color', 'red');
+						  }
+						  else if (conf_password == '') {
+							  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+							  sa_jq('.login_otp_modal .sa-text').html(blank_cnf_pwd).show();
+							  sa_jq('#sa_conf_password').css('border-color', 'red');
+						  }
+						  else if (password != conf_password) {
+							  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+							  sa_jq('.login_otp_modal .sa-text').html(pwd_not_match).show();
+						  }
+						  else
+						  {	
+							  sa_jq('.sa_pwd_submit').attr('disabled', true);
+							  sa_jq('.sa_pwd_submit').addClass('loading').text('');
+							  
+							  sa_jq.ajax({
+										  url: '/apps/sa/validateloginotp.php',
+										  type: 'GET',
+										  async: true,
+										  cache: false,
+										  jsonpCallback: 'updatePassword',
+										  contentType: 'application/json',
+										  dataType: 'jsonp',
+										  data:
+											  {
+												  action : 'updatepassword',
+												  shop: 'iktarabanaras.myshopify.com',
+												  pwd: password,
+												  cnf_pwd: conf_password,
+												  mobileno: phone_no,
+												  
+											  },
+										  success: function (data) {
+											  sa_jq('.sa_pwd_submit').attr('disabled', false).removeClass('loading').text(submit_btn);
+										  },
+										  error: function (xhr, ajaxOptions, thrownError) {
+											  console.log(xhr.status);
+											  console.log(thrownError);
+										  }
+									  });	
+							  }
+							  return false;
+						  });
+				 }
+				 function sendLoginOTP(phone_no,resend=false){
+					  sa_jq.ajax
+						  ({
+							  url: '/apps/sa/validateloginotp.php',
+							  type: 'GET',
+							  jsonpCallback: 'generateloginOTP',
+							  contentType: 'application/json',
+							  dataType: 'jsonp',
+							  data:
+								  {
+									  action : 'generateotp',
+									  shop: 'iktarabanaras.myshopify.com',
+									  mobileno: phone_no
+								  },
+							  success: function (data) {
+								  
+								  var resp =  data;
+								  if(resp.status=='success')
+								  {
+									 sa_jq('.sa_login_otp_submit' ).off().on( 'click', verifyLoginOtp );
+									  if(resend)
+									  {
+										  sa_jq('.sa_resend_login').html(resend_btn).attr('disabled',false);
+									  }
+								  }
+								  else
+								  {
+									  sa_jq('.login_otp_modal .sa-text').html(data.description).show();
+									 sa_jq('.login_otp_modal.sa_modal').css('display','block');
+									 if(data.description == 'Sorry, but you do not have a registered phone number')
+									 {
+										localStorage.setItem('sa_phone',phone_no); 
+										window.location.href = '/account/register'; 
+									 }
+								  }
+								 sa_jq(sa_form_obj).find('.sa_login_submit').removeClass('loading').text(submit_btn).attr('disabled',false); 
+							  },
+							  error: function (xhr, ajaxOptions, thrownError) {
+								  console.log(xhr.status);
+								  console.log(thrownError);
+							  }
+						  });	
+						  
+					  return false;	
+				  }
+				  //validate otp process starts here
+				function verifyLoginOtp() {
+				  sa_jq('.login_otp_modal .cross,.login_otp_modal .right').addClass('sa-hide'); 
+				  var phone_no 	= sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]:hidden').val()).replace(/\s|\+/g,'');
+				  if(phone_no=='')
+				  {
+					phone_no 	= sa_jq.trim(sa_jq(sa_form_obj).find('[name=sa_phone_no]').val()).replace(/\s|\+/g,'');
+				  }
+				  var otp 		= sa_jq('.login_otp_modal #sa_otp').val();
+
+
+				  if (otp == '') {
+					  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+					  sa_jq('.login_otp_modal .sa-text').removeClass('sa_success').html(blank_otp).show();
+					  sa_jq(sa_form_obj).find('#sa_phone_no').css('border-color', 'red');
+				  }
+				  else if (otp.length<3 || otp.length>9) {
+					  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+					  sa_jq('.login_otp_modal .sa-text').removeClass('sa_success').html(invalid_otp).show();
+					  sa_jq('.login_otp_modal #sa_otp').css('border-color', 'red');
+				  }
+				  else
+				  {
+					  sa_jq('.login_otp_modal .ring').removeClass('sa-hide');
+					  sa_jq('.login_otp_modal .sa-modal-content').css({'transform': 'scale(0)','transition': 'all 0.5s'});
+					  sa_jq('.sa_login_otp_submit').attr('disabled', true).text(processing_txt);
+					  sa_jq('.sa_resend_login').attr('disabled', true);
+					  
+					  sa_jq.ajax({
+								  url: '/apps/sa/validateloginotp.php',
+								  type: 'GET',
+								  async: true,
+								  cache: false,
+								  jsonpCallback: 'validateloginOTP',
+								  contentType: 'application/json',
+								  dataType: 'jsonp',
+								  data:
+									  {
+										  action : 'validateotp',
+										  shop: 'iktarabanaras.myshopify.com',
+										  mobileno: phone_no,
+										  otp: otp
+										  
+									  },
+								  success: function (data) {
+									  var resp =  data;
+									  if(resp.status=='success')
+									  {
+										  sa_jq('.sa_resend_login').attr('disabled', false);
+										  sa_jq('.sa_login_otp_submit').attr('disabled', false).text(validate_btn);
+									  }
+								  },
+								  error: function (xhr, ajaxOptions, thrownError) {
+									  console.log(xhr.status);
+									  console.log(thrownError);
+								  }
+							  });	
+					  }
+					  return false;
+			    }
+				function generateloginOTP(data){
+					sa_jq('.sa_otp_form_link').hide(500);
+					sa_jq('.login_otp_modal .cross,.login_otp_modal .right,.login_otp_modal .ring').addClass('sa-hide');
+					sa_jq('.login_otp_modal #sa_otp').val('');
+					  if(data.status=='error')
+					  {
+						  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+						  sa_jq('.login_otp_modal .sa-text').html(data.description).show();
+					  }
+					  else
+					  {
+						  sa_jq('[tabindex="-1"]').removeAttr('tabindex');  
+						  var phone_no = data.description.batch_dtl[0].mobileno;
+						  sa_jq('.login_otp_modal .right').removeClass('sa-hide');
+						  sa_jq('.login_otp_modal .sa-text').addClass('sa_success').html(otp_sent_txt+phone_no).show();
+                         sa_jq('.smsalert_validate_field').removeClass('sa-hide');						  
+						  timerCount();
+						  
+					  }
+					 sa_jq('.login_otp_modal.sa_modal').css('display','block');
+					 sa_jq('.login_otp_modal .sa-modal-content').css('transform', 'scale(1)');
+				  }
+				var timerCount = function(otp_timer=15){
+					 var circle = sa_jq('.timer circle.progress-ring__circle')[0];
+					  var radius = circle.r.baseVal.value;
+					  var progress = 0;
+					  var circumference = radius * 2 * Math.PI;
+
+					  circle.style.strokeDasharray = circumference+' '+circumference;
+					  circle.style.strokeDashoffset = circumference;
+					  
+					  function setProgress(percent) {
+					  const offset = circumference - percent / 150 * circumference;
+					  circle.style.strokeDashoffset = offset;
+				       }
+					  var timer = function(secs){
+						  var sec_num = parseInt(secs, 10)    
+						  var hours   = Math.floor(sec_num / 3600) % 24
+						  var minutes = Math.floor(sec_num / 60) % 60
+						  var seconds = sec_num % 60    
+						  hours = hours < 10 ? "0" + hours : hours;
+						  minutes = minutes < 10 ? "0" + minutes : minutes;
+						  seconds = seconds < 10 ? "0" + seconds : seconds;
+						  //return [hours,minutes,seconds].join(":")
+						  return seconds;
+					  };
+					  
+					  sa_jq(".timer").show(500);
+					  sa_jq(".time").html(timer(otp_timer));
+					  
+					  
+					  var counter = otp_timer;
+						  interval = setInterval(function() {
+						  counter--;
+						  progress = progress+10;
+					      setProgress(progress);
+							  var places = (counter < 10 ? "0" : "");
+							  sa_jq(".time").html(timer(counter));
+						  if (counter == 0) {
+							  counterRunning=false;
+							  sa_jq(".timer").hide(500);
+							  var cssString = "pointer-events: auto; cursor: pointer; opacity: 1; float:right"; 
+							  sa_jq(".sa_otp_form_link").attr("style",cssString).show(500);
+							  clearInterval(interval);
+						  }
+					  }, 1000);
+				  }
+  
+  
+				  function validateloginOTP(data)
+				  {
+					 sa_jq('.login_otp_modal .ring').addClass('sa-hide');
+					  sa_jq('.login_otp_modal .sa-modal-content').css({'transform': 'scale(1)','transition': 'all 0.5s'});
+					  sa_jq('.login_otp_modal .cross,.login_otp_modal .right,.login_otp_modal .ring').addClass('sa-hide'); 
+					  if(data.status=='success' && data.description.desc=='Code Matched successfully.')
+					  {
+						  if (typeof data.data === 'undefined') {
+							  sa_jq('[tabindex="-1"]').removeAttr('tabindex');
+							  sa_jq('.login_otp_modal').html('<div class="sa_modal_dialog "><div class="sa-modal-content"><div class="sa_modal_header"><div class="sa-icon-close"><span></span></div></div><div class="sa_modal_body sa_modal_form_container"><div class="sa-block sa_modal_subhead">'+pwd_change_heading+'</div><div class="form-group sa_heading" ><svg class="checkmark sa-hide cross" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"><circle class="checkmark_circle" cx="26" cy="26" r="25" fill="none"></circle><path class="checkmark_check" stroke-width="4" fill="none" d="M14.1 14.1l23.8 23.8 m0,-23.8 l-23.8,23.8"></path></svg><svg class="checkmark sa-hide right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52"> <circle class="checkmark__circle" cx="26" cy="26" r="25" fill="none"></circle> <path class="checkmark__check" stroke-width="4" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"></path></svg><span class="sa-text sa_error"></span></div><div class="form-group"><p>'+pwd_modal_text+' </p></div><div class="form-group sa_otp_txt"><input type="password"  placeholder="'+pwd_placeholder+'" class="form-control input-lg required" name="sa_password" id="sa_password"></div><div class="form-group sa_otp_txt"><input type="password" class="form-control input-lg required" id="sa_conf_password" placeholder="'+cnf_placeholder+'"></div><div class="form-group"><button type="button" class="btn button sa_pwd_submit">'+submit_btn+'</button></div></div></div>');
+						  }
+						  else
+						  {
+							sa_jq('.login_otp_modal .right').removeClass('sa-hide');
+							sa_jq('.login_otp_modal .smsalert_validate_field').addClass('sa-hide');
+							sa_jq('.login_otp_modal .sa-text').addClass('sa_success').removeClass('sa-text').html(data.description.desc).show();
+							processLogin(data);
+							
+						  }
+					  }
+					  else
+					  {
+						  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+						  sa_jq('.login_otp_modal .sa-text').removeClass('sa_success').html(data.description.desc).show();
+						  sa_jq('.sa_login_otp_submit').text(validate_btn);
+						  
+					  }
+				  }
+				  
+				  function updatePassword(data)
+				  {
+					  if(data.status=='success')
+					  {
+						  sa_jq('.login_otp_modal .right').removeClass('sa-hide');
+						  sa_jq('.login_otp_modal .smsalert_validate_field').addClass('sa-hide');
+						  sa_jq('.login_otp_modal .sa-text').addClass('sa_success').removeClass('sa-text').html(pwd_changed).show();
+							processLogin(data);
+					  }
+					  else
+					  {
+						  sa_jq('.login_otp_modal .cross').removeClass('sa-hide');
+						  sa_jq('.login_otp_modal .sa-text').removeClass('sa_success').html(pwd_changed_error).show();
+					  }
+				  }
+				  function processLogin(data)
+				  {
+					  sa_jq('#SACustomerEmail').val(data.data.email);
+					  sa_jq('#SACustomerPassword').val(data.data.password);
+					  sa_jq('#SALoginForm form').submit();   
+				   }
+				  }
+				  </script>
