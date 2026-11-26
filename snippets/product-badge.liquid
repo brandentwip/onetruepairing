@@ -1,5 +1,6 @@
 <div class="product-badge">
   <ul>
+    {%- assign badge_variant = variant | default: product.selected_or_first_available_variant -%}
     {%- if sold_out -%}
     <li class="soldout-badge">{{ settings.soldout_title }}</li>
     {%- else -%}
@@ -28,13 +29,14 @@
     {%- endif -%}
     
     {%- if on_sale -%}
-    {%- if settings.sale_title != '' or settings.sale_percent_enable -%}
+    {%- if settings.sale_title != '' or settings.sale_percent_enable or show_sale_percent -%}
     <li class="sale-badge">
       {%- if settings.sale_title != '' -%}
       {{ settings.sale_title }}
       {%- endif -%}
-      {%- if settings.sale_percent_enable -%}
-      {{ product.selected_or_first_available_variant.compare_at_price | minus: product.selected_or_first_available_variant.price | times: 100.0 | divided_by: product.selected_or_first_available_variant.compare_at_price | money_without_currency | replace: ',', '.' | times: 100 | remove: '.0'}}% Off
+      {%- if settings.sale_percent_enable or show_sale_percent -%}
+      {%- assign discount_percentage = badge_variant.compare_at_price | minus: badge_variant.price | times: 100.0 | divided_by: badge_variant.compare_at_price | round -%}
+      {{ discount_percentage }}% Off
       {%- endif -%}
     </li>
     {%- endif -%}

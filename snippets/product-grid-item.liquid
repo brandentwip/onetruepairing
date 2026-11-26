@@ -1,12 +1,12 @@
-{%- assign on_sale = false -%}
-{%- if product.compare_at_price > product.price -%}
-{%- assign on_sale = true -%}
-{%- endif -%}
 {%- assign sold_out = true -%}
 {%- if product.available -%}
 {%- assign sold_out = false -%}
 {%- endif -%}
 {%- assign variant = product.selected_or_first_available_variant -%}
+{%- assign on_sale = false -%}
+{%- if variant.compare_at_price > variant.price -%}
+{%- assign on_sale = true -%}
+{%- endif -%}
 {%- if product.available -%}
 {%- assign func = "Shopify.addItem(" | append: variant.id | append: ", 1)" -%}
 {%- endif -%}
@@ -28,8 +28,8 @@
            class="image-position-size popup_cart_image"
            >
     </a>
-    {%- if sold_out or on_sale or settings.new_title != '' or product.description contains '[new_products]' -%}
-    
+    {%- if sold_out or on_sale or product.description contains '[new_products]' or product.metafields.new_badge.date != blank -%}
+    {%- render 'product-badge' with product as product, on_sale: on_sale, sold_out: sold_out, variant: variant, show_sale_percent: true -%}
     {%- endif -%}
     {%- if settings.product_action_button_enable and template != 'cart' -%}
     {%- render 'product-action', product: product, on_sale: on_sale, sold_out: sold_out, variant: variant, func: func -%}
@@ -52,12 +52,10 @@
     <h2 class="product-title popup_cart_title"><a href="{{ product.url | within: collection }}">{{ product.title }}</a></h2>
     
     <div class="product-price">
-     
-      {%- if product.variants.first.compare_at_price > product.variants.first.price -%}
-      <del>{{ product.variants.first.compare_at_price | money }}</del>
+      {%- if variant.compare_at_price > variant.price -%}
+      <del>{{ variant.compare_at_price | money }}</del>
       {%- endif -%}
-      <span>{{ product.variants.first.price | money }}</span> 
-      {%- render 'product-badge' with product as product, on_sale: on_sale, sold_out: sold_out -%}
+      <span>{{ variant.price | money }}</span>
     </div>
 
 
