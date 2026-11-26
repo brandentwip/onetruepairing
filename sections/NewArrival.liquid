@@ -21,8 +21,8 @@
   #na-{{ section.id }} .na__heading {
     margin: 0 0 8px;
     padding: 0 {{ section.settings.side_padding }}px;
-    font-size: 14px;
-    font-weight: 400;
+    font-size: {{ section.settings.heading_size }}px;
+    font-weight: 600;
     letter-spacing: 0.02em;
     text-transform: uppercase;
     text-align: {{ section.settings.heading_align }};
@@ -49,7 +49,7 @@
     position: relative;
     display: block;
     width: 100%;
-    aspect-ratio: {{ ratio }};
+    {%- unless ratio == 'auto' -%}aspect-ratio: {{ ratio }};{%- endunless -%}
     background: var(--na-bg);
     overflow: hidden;
   }
@@ -62,6 +62,15 @@
     object-position: center top;
     transition: opacity .35s ease;
   }
+  {%- if ratio == 'auto' -%}
+  #na-{{ section.id }} .na__media img:not(.na__img--hover) {
+    position: static;
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+  {%- endif -%}
   #na-{{ section.id }} .na__media img.na__img--hover { opacity: 0; }
   #na-{{ section.id }} .na__card:hover .na__img--hover { opacity: 1; }
 
@@ -105,6 +114,11 @@
   }
   @media (max-width: 575px) {
     #na-{{ section.id }} .na__grid { grid-template-columns: repeat(var(--na-cols-sm), minmax(0, 1fr)); }
+    #na-{{ section.id }} .na__heading { padding: 0 12px; font-size: {{ section.settings.heading_size | times: 0.75 | round }}px; }
+    #na-{{ section.id }} .na__grid { margin: 0 12px; }
+    #na-{{ section.id }} .na__info { padding: 6px 3px 8px; }
+    #na-{{ section.id }} .na__title { font-size: 8px; letter-spacing: 0; overflow-wrap: anywhere; }
+    #na-{{ section.id }} .na__price { font-size: 8px; }
   }
 </style>
 
@@ -208,6 +222,7 @@
       ],
       "default": "left"
     },
+    { "type": "range", "id": "heading_size", "min": 12, "max": 60, "step": 1, "unit": "px", "label": "Heading size", "default": 24 },
     { "type": "collection", "id": "collection", "label": "Collection (only used if no Product blocks are added)" },
     { "type": "range", "id": "products_to_show", "min": 3, "max": 24, "step": 1, "label": "Products to show", "default": 6 },
     { "type": "checkbox", "id": "show_price", "label": "Show price", "default": true },
@@ -217,19 +232,20 @@
 
     { "type": "header", "content": "Layout" },
     { "type": "range", "id": "columns_desktop", "min": 2, "max": 5, "step": 1, "label": "Columns (desktop)", "default": 3 },
-    { "type": "range", "id": "columns_tablet", "min": 1, "max": 4, "step": 1, "label": "Columns (tablet)", "default": 2 },
-    { "type": "range", "id": "columns_mobile", "min": 1, "max": 3, "step": 1, "label": "Columns (mobile)", "default": 2 },
+    { "type": "range", "id": "columns_tablet", "min": 1, "max": 4, "step": 1, "label": "Columns (tablet)", "default": 3 },
+    { "type": "range", "id": "columns_mobile", "min": 1, "max": 3, "step": 1, "label": "Columns (mobile)", "default": 3 },
     {
       "type": "select",
       "id": "image_ratio",
       "label": "Image ratio",
       "options": [
+        { "value": "auto", "label": "Original (full image, no crop)" },
         { "value": "5 / 9", "label": "Tall (model shots)" },
         { "value": "2 / 3", "label": "Portrait 2:3" },
         { "value": "3 / 4", "label": "Portrait 3:4" },
         { "value": "1 / 1", "label": "Square" }
       ],
-      "default": "5 / 9"
+      "default": "auto"
     },
     {
       "type": "select",
