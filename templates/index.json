@@ -144,10 +144,10 @@
         "dot_active_color": "#881983"
       }
     },
-    "multiple_banner_r83MFi": {
+    "multiple_banner_JPpQnT": {
       "type": "multiple-banner",
       "blocks": {
-        "banner_gBfcJL": {
+        "banner_z9iPha": {
           "type": "banner",
           "settings": {
             "banner_image": "shopify://shop_images/grid_photo_2_08a83138-de59-40d9-b0df-af8eefa350ce.jpg",
@@ -167,7 +167,7 @@
             "button_hover_color": "#ffffff"
           }
         },
-        "banner_XqyTxK": {
+        "banner_iBUzgH": {
           "type": "banner",
           "settings": {
             "banner_image": "shopify://shop_images/IMG_2055.jpg",
@@ -187,7 +187,7 @@
             "button_hover_color": "#ffffff"
           }
         },
-        "banner_y8FUnF": {
+        "banner_r7C4mC": {
           "type": "banner",
           "settings": {
             "banner_image": "shopify://shop_images/grid_photo_2_2.jpg",
@@ -207,7 +207,7 @@
             "button_hover_color": "#ffffff"
           }
         },
-        "banner_yh7Cfe": {
+        "banner_4rgXLx": {
           "type": "banner",
           "settings": {
             "banner_image": "shopify://shop_images/IMG_2053.jpg",
@@ -227,7 +227,7 @@
             "button_hover_color": "#ffffff"
           }
         },
-        "banner_fwPEeq": {
+        "banner_nMxbPG": {
           "type": "banner",
           "settings": {
             "banner_image": "shopify://shop_images/grid_photo_2_39bf9ac6-e596-4560-b6da-1af750caa4b9.jpg",
@@ -247,7 +247,7 @@
             "button_hover_color": "#ffffff"
           }
         },
-        "banner_4UxFVy": {
+        "banner_DBHXyd": {
           "type": "banner",
           "settings": {
             "banner_image": "shopify://shop_images/IMG_2058.jpg",
@@ -267,7 +267,7 @@
             "button_hover_color": "#ffffff"
           }
         },
-        "section_padding_MDpC6X": {
+        "section_padding_zbbdfL": {
           "type": "section_padding",
           "settings": {
             "section_padding_top": 50,
@@ -280,13 +280,13 @@
         }
       },
       "block_order": [
-        "banner_gBfcJL",
-        "banner_XqyTxK",
-        "banner_y8FUnF",
-        "banner_yh7Cfe",
-        "banner_fwPEeq",
-        "banner_4UxFVy",
-        "section_padding_MDpC6X"
+        "banner_z9iPha",
+        "banner_iBUzgH",
+        "banner_r7C4mC",
+        "banner_4rgXLx",
+        "banner_nMxbPG",
+        "banner_DBHXyd",
+        "section_padding_zbbdfL"
       ],
       "settings": {
         "section_title": "SHOP NEW ARRIVALS",
@@ -862,7 +862,7 @@
   },
   "order": [
     "b6c7552a-b361-4821-b329-92ec3340e6ad",
-    "multiple_banner_r83MFi",
+    "multiple_banner_JPpQnT",
     "featured_collection_fBcwVj",
     "category_list_2_yQX3Vz",
     "multiple_banner_gqLPUP",
